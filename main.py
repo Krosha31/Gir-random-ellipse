@@ -23,7 +23,7 @@ class Example(QMainWindow):
             qp.begin(self)
             rad = randrange(1, 301)
             x, y = randrange(1, 401), randrange(1, 401)
-            qp.setBrush(QColor(randrange(255), randrange(255), randrange(255)))
+            qp.setBrush(QColor(255, 255, 0))
             qp.drawEllipse(x, y, rad, rad)
             qp.end()
             self.krug = False
