@@ -21,9 +21,10 @@ class Example(QMainWindow):
         if self.krug:
             qp = QPainter()
             qp.begin(self)
-            x, y = randrange(1, 201), randrange(1, 201)
-            qp.setBrush(QColor(255, 55, 0))
-            qp.drawEllipse(x, y, 100, 100)
+            rad = randrange(1, 301)
+            x, y = randrange(1, 401), randrange(1, 401)
+            qp.setBrush(QColor(randrange(255), randrange(255), randrange(255)))
+            qp.drawEllipse(x, y, rad, rad)
             qp.end()
             self.krug = False
 
